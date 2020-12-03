@@ -1,2 +1,2 @@
 # derm-bot
-Using deep learning and computer vision to classify skin diseases
+Skin cancer detection and classification using deep learning and computer vision
