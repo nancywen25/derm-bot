@@ -2,7 +2,7 @@
 Skin cancer detection ising deep learning and computer vision
 
 ## Steps for running Front end
-
+Got to frontend folder
 
 ### Unix Bash (Linux, Mac, etc.):
 
