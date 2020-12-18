@@ -96,7 +96,11 @@ def upload_file():
         f.save(os.path.join(app.config['UPLOAD_FOLDER'],f.filename))
 
         prob, pred = pred_predict_single_image(f.filename)
-        res = "The image is " + convert[pred] + " with confidence " + str(prob)
+
+        if pred == 1:
+            res = str(round(prob*100, 2)) +"% "+ convert[pred]
+        else:
+            res = str(round((1-prob)*100, 2)) +"% "+ convert[pred]
         return res
 
 if __name__ == '__main__':
